@@ -5,30 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Live editing</title>
+    <link rel="stylesheet" href="/style.css">
+    <style contenteditable style="display: block; white-space: 10px;" src="/style.css">
+      
+
+    </style>
+    
 </head>
 <body>
-    <style contenteditable style="display: block; white-space: 10px;">
-        html{
-            background:rgb(213, 203, 203) ;
-            font-size: 100px;
-        }
-
-        p{ box-shadow: 20px;}
-        input{
-
-        }
-    </style>
+    
     <header>
         <div ><input id="in"  type="text" width="30px"  height="100px"></div>
         <div> <a id="p"> Home </a></div>
     </header>
 </body>
-    <script>
-        const x = document.querySelector("#in")
-        const p = document.querySelector("#p")
-        x.addEventListener("change", (event) =>{
-            p.innerHTML =event.target.value;
-        })
+    <script src="/jscript.js">
+       
 
     </script>
 </html>
