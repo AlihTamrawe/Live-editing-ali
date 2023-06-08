@@ -14,9 +14,21 @@
         }
 
         p{ box-shadow: 20px;}
+        input{
+
+        }
     </style>
     <header>
-        <div> <a> Home </a></div>
+        <div ><input id="in"  type="text" width="30px"  height="100px"></div>
+        <div> <a id="p"> Home </a></div>
     </header>
 </body>
+    <script>
+        const x = document.querySelector("#in")
+        const p = document.querySelector("#p")
+        x.addEventListener("change", (event) =>{
+            p.innerHTML =event.target.value;
+        })
+
+    </script>
 </html>
